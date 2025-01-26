@@ -52,15 +52,26 @@ child called
 
 // by default, capture is always false, or can say bubbling is always true.
 
-// child.addEventListener("click", ()=>{
-//     console.log("child clicked");
+child.addEventListener("click", ()=>{
+    console.log("child clicked");
     
-// }, true)
-// parent.addEventListener("click", ()=>{
-//     console.log("parent clicked");
+}, true)
+parent.addEventListener("click", ()=>{
+    console.log("parent clicked");
     
-// }, true)
-// grandparent.addEventListener("click", ()=>{
-//     console.log("grandparent clicked");
+}, true)
+grandparent.addEventListener("click", ()=>{
+    console.log("grandparent clicked");
     
-// }, true)
+}, true)
+
+
+
+// if a child gets called: 
+// o/p flow will be : 
+
+/*
+grandparent called
+parent called 
+child called 
+*/
